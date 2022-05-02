@@ -22,6 +22,9 @@ header {
   color: #fff;
   min-height: 50vh;
   display: flex;
+  background-image: url('../images/nature_background.jpg');
+  background-size: cover;  
+  background-position: center center;
 }
 
 main {
