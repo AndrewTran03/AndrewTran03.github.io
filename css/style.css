@@ -31,7 +31,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ;
   grid-gap: 20px;
-  margin-top: 44px;
+  margin-top: 44px 40px;
 
   justify-items: center;
   justify-content: center;
@@ -175,6 +175,7 @@ footer div {
 @media all and (max-width:700px) {
   main {
     grid-template-columns: 1fr;
+    margin: 44px auto;
   }
   img {
     height: 40vh;
