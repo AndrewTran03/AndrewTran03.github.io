@@ -177,7 +177,10 @@ footer div {
     grid-template-columns: 1fr;
     margin: 44px auto;
   }
+  .description {
+    font-size: 18px;
+  }
   img {
-    height: 40vh;
+    height: 25vh;
   }
 }
