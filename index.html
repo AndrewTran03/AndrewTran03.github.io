@@ -1,85 +1,939 @@
+<!-- Website Skeleton Reference Link: https://www.free-css.com/free-css-templates/page269/virtual-folio -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Andrew T</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Libre+Baskerville&family=Space+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d9a5371ef1.js" crossorigin="anonymous"></script>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  
+  <title>Andrew Tran - Personal Website</title>
 
-  <body>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <div id="stylesheet-list">
+    <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
 
-    <div class="container">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 
-      <header>
-        <div class="wrapper">
-          <h1>Andrew Tran</h1>
-            <p class="bio"> This is a small biography about myself. I'm a Computer Science major. This site highlights some of my digital
-              media-related coursework in ENGL 3844. </p>
-            <div class="buttonBox">
-            <a class="myButton" href="#projects">Go</a>
+    <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/extra-styles.css">
+  </div>
+  
+</head>
+
+<body class="theme-blue">
+  <!-- Back-to-top Button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+  <!-- End back-to-top button -->
+  
+  <!-- Settings -->
+  <div id="settings-menu">
+    <div class="config">
+      <div class="template-config">
+        <div class="d-block">
+          <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+        </div>
+      </div>
+      <div class="set-menu">
+        <p>Select Color</p>
+        <div class="color-bar" data-toggle="selected">
+          <span class="color-item bg-theme-blue selected" data-class="theme-blue"></span>
+          <span class="color-item bg-theme-red" data-class="theme-red"></span>
+          <span class="color-item bg-theme-green" data-class="theme-green"></span>
+          <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+          <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End settings -->
+  
+  <!-- Header-->
+  <div id="website-header">
+    <div class="vg-page page-home" id="home" style="background-image: url(assets/images/nature-background.jpg)">
+      <!-- Navbar -->
+      <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+        <div class="container">
+          <a href="" class="navbar-brand">AT's Personal Website</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+            <span class="ti-menu"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#biography-about" class="nav-link" data-animate="scrolling">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link" data-animate="scrolling">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#education-experiences" class="nav-link" data-animate="scrolling">Education & Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a href="#project-portfolio" class="nav-link" data-animate="scrolling">Projects Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#extra-info" class="nav-link" data-animate="scrolling">Other Info.</a>
+              </li>
+              <li class="nav-item">
+                <a href="#website-footer" class="nav-link" data-animate="scrolling">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav ml-auto">
+              <li class="nav-item">
+                <button class="btn btn-fab btn-theme no-shadow">Eng</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <!-- End Navbar -->
+      
+      <!-- Caption header -->
+      <div class="caption-header text-center wow zoomInDown">
+        <h5 class="fw-normal">Welcome</h5>
+        <h1 class="fw-light mb-4">I'm Andrew Tran</h1>
+        <div class="badge">A Computer Science Student at Virginia Tech + Future Software Engineer</div>
+      </div> 
+      <!-- End Caption header -->
+      
+      <div class="floating-button"><span class="ti-mouse"></span></div>
+    </div>
+  </div>
+  <!-- End header -->
+  
+  <!-- Biography-about section -->
+  <div id="biography-about">
+    <div class="vg-page page-about">
+      <div id="biography-about-section">
+        <div class="text-center">
+          <div class="badge badge-subhead wow fadeInUp">About</div>
+        </div>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-4 py-3">
+              <div class="img-place wow fadeInUp">
+                <img src="assets/images/background-about/andrew-tran-profile-picture.PNG" alt="Andrew Tran - Professional Profile Picture">
+              </div>
             </div>
+            <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+              <h1 class="fw-light">Andrew Tran</h1>
+              <h5 class="fg-theme mb-3">Aspiring Software Engineer</h5>
+              <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form but the majority have suffered alteration in some</p>
+              <ul class="theme-list">
+                <li><b>From:</b> Annandale, Virginia | USA</li>
+                <li><b>Lives In:</b> Blacksburg, Virginia | USA</li>
+                <li><b>College Currently Attending:</b> Virginia Polytechnic Institute and State University, Virginia | USA</li>
+                <li><b>Age:</b> 19</li>
+                <li><b>Gender:</b> Male</li>
+              </ul>
+              <button class="btn btn-theme-outline">
+                <a href="assets/viewable-documents/Andrew Tran - Fall 2022 Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+              </button>
+              <button class="btn btn-theme-outline">
+                <a href="assets/viewable-documents/Andrew Tran - Fall 2022 Unofficial Academic Transcript.pdf" target="_blank" rel="noopener noreferrer">View Academic Transcript</a>
+              </button>
+            </div>
+          </div>
         </div>
-      </header>
-
-      <main id="projects">
-        <div class="project">
-          <img src="images/laptop_gaming.jpg" alt="A Gamer Sitting on His Laptop"/>
-          <h2>An Emerging Disaster of 21st Century Videogaming — Exposing Rockstar Games Inc.</h2>
-          <p class="description">Have you played online videogames recently? If not, let me give you some insider information: large-scale
-            video game companies have been plaguing their popular titles with new pay-to-win models of gameplay. Surprised? Or just
-            outraged like me? Want to read more? I gave my full <a href="https://medium.com/@andrewt03/an-emerging-disaster-of-21st-century-
-            videogaming-exposing-rockstar-games-inc-2d99ba44f26d" target="_blank">remarks</a> about the travesty happening at Rockstar Games
-            Inc. and how to save this once thriving company from turning into an utter embarrassment within the gaming commmunity.</p>
+      </div>
+      <!-- End biography-->
+    </div>
+  </div>
+  <!-- End biography-about section -->
+  
+  <!-- Skills -->
+  <div id="skills">
+    <div class="container py-5">
+      <div class="text-center">
+        <div class="badge badge-subhead wow fadeInUp">Skills</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">My Skills</h1>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Programming Langauges / Technologies</h4>  
+            <div id="prog-lang-and-tech-list">
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Java</span>
+                <!-- Note: If Ever in Need of Progress Bars...
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">86%</div>
+                </div>
+                -->
+              </div>      
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Python</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">C (for Low-Level Programming)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">HTML + CSS</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">JavaScript</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">R (for Data Analytics)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Docker / Kubernetes</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Windows OS / Linux Terminal / GitBash</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Microsoft Office</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project">
-            <iframe width="100%" style="height:50vh" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//
-            api.soundcloud.com/tracks/1246722430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=
-            false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow:
-             hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,
-             sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-418077237" title="The TedTalkers Podcast: What Makes a TEDTalk a TEDTalk?" target="_blank" style="color: #cccccc;
-             text-decoration: none;">aliciacrisp</a> · <a href="https://soundcloud.com/user-418077237/final-podcast-project" title="TED Talkers" target="_blank"
-              style="color: #cccccc; text-decoration: none;">TED Talkers</a></div>
-            <h2>The "Ted-Talkers" Podcast</h2>
-            <p class="description">Have you ever thought about what goes into making a TedTalk a great type of podcast? Here, there is great
-              discussion that goes in-depth to break down the <a href="https://soundcloud.com/user-418077237/final-podcast-project" target="_blank">
-              anatomy and rhetorical skills</a> needed for a TedTalk presenter to transform himself/herself into an ordinary speaker into a unforgettable
-              scholar of their discussed topic.</p>
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Relevant Coursework</h4>
+            <div id="relevant-course-list">
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Android Mobile Software Development (CS 3714)</span>
+                <!-- Note: If Ever in Need of Progress Bars...
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">86%</div>
+                  </div>
+                -->
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Intro to Data Analytics and Visualization (CS 3654)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Software Design and Data Structures (CS 2114)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Intro to Computer Organization I (CS 2505)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Intro to Problem Solving in CS (CS 2104)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Intro to Programming in Python (CS 1064)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Intro to Discrete Mathematics (MATH 2534)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Applied Combinatorics and Graph Theory (MATH 3134)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Cryptography I (MATH 4175)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Intro to Differential Equations (MATH 2214)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Statistics for Engineers (STAT 4705)</span>
+              </div>
+              <div class="progress-wrapper wow fadeInUp">
+                <span class="caption">Writing and Digital Media (ENGL 3844)</span>
+              </div>
+            </div> 
+          </div>
         </div>
-        <div class="project">
-          <iframe style="height:50vh" width="100%" height="315" src="https://www.youtube.com/embed/B4O7lGY6Ufk" title="Why Study Computer Science? Learn Computer Science Today for Greater Career Opportunities Tomorrow!" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <h2>"Why Should People do Computer Science? Video</h2>
-          <p class="description">What's with computer science? Have you always wanted to learn what's the deal with programming? This 3-minute <a href="https://youtu.be/B4O7lGY6Ufk"
-          target="_blank">YouTube video</a> explains everything you need to know about Computer Science, why students need to learn it, and how to join this Technological Revolution.</p>
-        </div>
-        <div class="project">
-          <img src="images/LinkedIn_Background_Picture.png" alt="A Picture of a Beautiful Sunrise across a Lake Anna Lakehouse in Virginia"/>
-          <h2>A Personal Autobiography - A Look into My LinkedIn Profile</h2>
-          <p class="description">Besides the projects that I have completed in this Digital Media course, I have other noticable accomplishments
-          in Mathematics and Computer Science located on my <a href="https://linkedin.com/in/andrew-tran-a15760205/" target="_blank">LinkedIn</a>. </p>
-        </div>
-      </main>
-
-      <footer>
-        <div>
-          <p class="copyright">© Andrew Tran 2022</p>
-          <ul class="icons">
-              <li><a href="https://linkedin.com/in/andrew-tran-a15760205/" target="_blank"><i class="fab fa-linkedin"></i></a></i></li>
-              <li><a href="https://www.instagram.com/andrew_tran03/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.facebook.com/andrewtranva/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      </div>
+    </div>
+  </div>  
+  <!-- End skills -->
+  
+  <!-- Education-And-Experiences -->
+  <div id="education-experiences">
+    <div class="container py-5">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Education & Experiences</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">My Education and Experiences</h1>
+      <div class="row">
+        <div class="col-md-6 wow fadeInRight">
+          <h2 class="fw-normal"><br>Education</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <div id="education-list">
+              <li>
+                <div class="title">2024 - Current</div>
+                <div class="details">
+                  <h5>B.S. - Computer Science</h5>
+                  <small class="fg-theme">Virginia Polytechnic Institute and State University</small>
+                  <img src="assets/images/education-experiences/virginia-tech-university-image.PNG" alt="Virginia Polytechnic Institute and State University Campus Image">
+                  <p><a href="https://www.collegetuitioncompare.com/trends/virginia-polytechnic-institute-and-state-university/cost-of-attendance/" target="_blank">Link to Image Source (Reference)</a><br><br>
+                    In-Major GPA: 4.00 | Cumulative GPA: 4.00
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="title">2021</div>
+                <div class="details">
+                  <h5>H.S. Diploma</h5>
+                  <small class="fg-theme">W.T. Woodson High School</small>
+                  <img src="assets/images/education-experiences/wt-woodson-high-school-image.PNG" alt="W.T. Woodson High School Campus Image">
+                  <p><a href="https://archinect.com/realarchinc/project/w-t-woodson-high-school" target="_blank">Link to Image Source (Reference)</a><br><br>
+                    Unweighted GPA: 4.00 | Weighted GPA: 4.51
+                  </p>
+                  <!-- Additional Text Functionality If Needed: 
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                  -->
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
-      </footer>
-
-
-
+        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+          <h2 class="fw-normal"><br>Experiences</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <div id="experience-list">
+              <li>
+                <div class="title">Summer 2022</div>
+                <div class="details">
+                  <h5>Software Developer Intern</h5>
+                  <small class="fg-theme">Zeta Assoicates Inc.</small>
+                  <img src="assets/images/education-experiences/zeta-associates-inc-logo-image.PNG" alt="Zeta Associates Inc. Logo Image">
+                  <p><a href="https://www.glassdoor.com/Overview/Working-at-Zeta-Associates-EI_IE1464469.11,26.htm" target="_blank">Link to Image Source (Reference)</a><br><br>
+                    • Developed a basic understanding of concepts relating to Kubernetes Clusters and Linux Containerization. <br>
+                    • Researched the newest applications of Unikernels, a specialized, single-address space machine image created by 
+                    using only required OS libraries to reduce file size and increase performance within Linux-based Containerized 
+                    Images. <br>
+                    • Designed a containerized DSP Spectrogram Application (with audio-processing functionality) on a Kubernetes 
+                    Cluster using Three.js, a JavaScript Library / API used for rendering 3D computer graphics on Internet Browsers. <br><br>
+                    <b>For more information about Zeta Assoicates Inc., please click on the following link <a href="https://www.zai.com/" target="_blank">here</a>.</b>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="title">May 2022</div>
+                <div class="details">
+                  <h5>Webmaster</h5>
+                  <small class="fg-theme">VT Society of Asian Scientists and Engineers (SASE) Organization</small>
+                  <img src="assets/images/education-experiences/VT-SASE-nick-timothy-andrew-group-photo.jpg" alt="VT SASE New Year's Celebration Image Taken with My Peers">
+                  <p><a href="https://www.facebook.com/saseatvt/photos/5764979620198740" target="_blank">Link to Image Source (Reference)</a><br><br>
+                    • In charge of the Virginia Tech SASE chapter's website, especially continual maintenance, regular updates on dates of 
+                    SASE Fall and Spring Semester events along with post-event pictures. <br>
+                    • Generate Google attendance forms for all SASE events (Internal/External) for the Fall and Spring Semester. <br>
+                    • Perform annual data analytics using Microsoft Excel for the Virginia Tech SASE chapter, reporting statistics on member 
+                    demographics & diversity along with member event attendance trends throughout the past academic year. <br><br>
+                    <b>For more information about the VT Society of Asian Scientists and Engineers (SASE), please click on the following link 
+                      <a href="http://www.sase.org.vt.edu/" target="_blank">here</a>.</b>
+                      <!--https://hosting.cs.vt.edu/uta/duty.html-->
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="title">Spring 2022</div>
+                <div class="details">
+                  <h5>Undergraduate Teaching Assistant</h5>
+                  <small class="fg-theme">VT Department of Computer Science</small>
+                  <img src="assets/images/education-experiences/vt-department-cs-logo-image.PNG" alt="VT Department of Computer Science Logo Image">
+                  <p><a href="https://mentoring.career.vt.edu/hub/virginiatech/groups/computer-science-information-technology/about" target="_blank">Link to Image Source (Reference)</a><br><br>
+                    • In charge of producing solutions and grading 200+ students’ programming assignments and projects. <br>
+                    • Holding 6+ office hours every week to assist students with the programming language’s concepts & assignments. <br>
+                    • Assisted students in developing computational problem-solving skills and software solutions to a variety of 
+                    multimedia, scientific, and engineering problems using the Python programming language. Topics include statement 
+                    sequencing, conditional program flow, iteration, functional decomposition, and recursion. Simple numeric data 
+                    types, strings, lists, list comprehensions, sets, and dictionaries. Input/output of file-based data, content 
+                    obtained from the web, and manipulation of digital images along with basic object-oriented concepts, classes, 
+                    objects, and methods. <br><br>
+                    <b>For more information about the VT Department of Computer Science UTA Program, please click on the following link 
+                      <a href="https://hosting.cs.vt.edu/uta/duty.html" target="_blank">here</a>.</b>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="title">September 2010 - Present Day</div>
+                <div class="details">
+                  <h5>Volunteer Youth Leader (Level I)</h5>
+                  <small class="fg-theme">Vietnamese Eucharistic Youth Movement (Thieu Nhi Thanh The)</small>
+                  <img src="assets/images/education-experiences/tntt-logo-image.PNG" alt="TNTT / VEYM Logo Image">
+                  <p><a href="https://commons.wikimedia.org/wiki/File:TNTT.png" target="_blank">Link to Image Source (Reference)</a><br><br>
+                    • Educates the youth about the religious teachings and doctrines associated with Catholicism. <br>
+                    • Reinforces the youth about the importance of Vietnamese culture and traditions <br><br>
+                    <b>For more information about the Vietnamese Eucharistic Youth Movement (Thieu Nhi Thanh The) Organization, please click on the following link 
+                      <a href="https://veym.net/" target="_blank">here</a>. Additionally, for more information about the Catholic church that I serve, please click
+                      on this link <a href="https://www.cttdva.org/" target="_blank">here</a>.</b>
+                  </p>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
     </div>
-  </body>
+    
+  </div>
+  <!-- End education-and-experiences -->
+  
+  <!-- (Not Used) Service -->
+  <!--
+  <div class="vg-page page-service">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Service</div>
+      </div>
+      <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
+      <div class="row mt-5">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-paint-bucket"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Web Design</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-search"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">SEO</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-vector"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">UI/UX Design</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-desktop"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Web Development</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- End service -->
+  
+  <!-- (Not Used) Fun-facts -->
+  <!--
+  <div class="vg-page page-funfact" style="background-image: url(assets/images/bg_banner.jpg);">
+    <div class="container">
+      <div class="row section-counter">
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="768">768</h1>
+          <span>Clients</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="230">230</h1>
+          <span>Project Complete</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="97">97</h1>
+          <span>Project Ongoing</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="699">699</h1>
+          <span>Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- End fun-facts -->
+
+  
+  <!-- Project-Portfolio -->
+  <div id="project-portfolio">
+    <div class="vg-page page-portfolio" >
+      <div class="container">
+        <div class="text-center wow fadeInUp">
+          <div class="badge badge-subhead">Project Portfolio</div>
+        </div>
+        <h1 class="text-center fw-normal wow fadeInUp">My Projects</h1>
+        <div class="row post-grid">
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="assets/images/project-portfolio/vt-alerts-forwarding-app-icon.PNG" alt="Online Alert Notification (Image of Symbolic Bell Icon)">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Python</a>
+                <a href="#" class="post-title">VTAlertsForwarding - VT HackViolet Hackathon 2022</a>
+                <p><br> Around Febuary 2022, my Hackathon team were in the area when a shooting unfortunately broke-out in the neighborhood near our college 
+                  campus the day before the Hackathon. This application was designed to notify the individual of impending emergencies in the area using a 
+                  Twitter API from our institution, Virginia  Tech, to seek shelter in cases of emergency and to stay safe out of harm's way. 
+                  (Link to <a href="https://github.com/AndrewTran03/VTAlertsForwarding---VTHackViolet---2022" target="_blank">GitHub</a> Repository)  
+                </p>
+                <span class="post-date"><span class="sr-only">Published on</span> Feb 5, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="assets/images/project-portfolio/space-capturing-project-app-icon.PNG" alt="">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Python</a>
+                <a href="#" class="post-title">Space Capturing Project - VTHacksIX Hackathon 2022</a>
+                <p><br>Know what a NFT is? Given that NFTs and blockchains are fairly popular in 2022, my same team for VT HackViolet 2022 designed
+                  an application that utilizes the APOD API from NASA to get a new space image every day, creates a unique hash for that image using the
+                  IPFS standard, and mints it on a blockchain run through Hedera. Additionally, there is an incorporated demo for a google extenstion that
+                  would allow users to see this new image every day on the google.com homepage and mint it from their browser, streamlining the process.
+                  (Link to <a href="https://github.com/AndrewTran03/SpaceCapturingProject---VTHacksIX---2022" target="_blank">GitHub</a> Repository)</p>
+                <span class="post-date"><span class="sr-only">Published on</span> Feb 27, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="assets/images/project-portfolio/graph-theory-cycle-detection.PNG" alt="Visual Graph Structure with a Cycle Present">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Java</a>
+                <a href="#" class="post-title">Graph Theory - Cycle Detection</a>
+                <p><br>In Graph Theory, one of the most common solved problems is detecting cycles in graphs. In my Applied Combinatorics and Graph Theory
+                   course, we covered how to visually detect graph cycles. Some specific applications include GPS systems and CPU deadlocking. However, I wanted to elevate the 
+                   sophistication of this algorithm from just solving it on-paper to using programming. Therefore, using concepts such as recursion and Depth-First Search 
+                   (DFS), I was able to make an interactive program where the user could enter the vertex (and inadvertiently the edge) data to build the graphical 
+                   representation and detect cycles. 
+                   (Link to <a href="https://github.com/AndrewTran03/MATH3134-AppliedCombo-GraphTheory-FinalProject" target="_blank">GitHub</a> Repository)
+                </p>
+                <span class="post-date"><span class="sr-only">Published on</span> May 4, 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End project-portfolio -->
+  
+  <!-- Testimonial -->
+  <!--
+  <div class="vg-page page-testimonial">
+    <div class="container">
+      <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
+      <div class="row justify-content-center mt-5 wow fadeInUp">
+        <div class="col-md-9">
+          <div class="owl-carousel testi-carousel">
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="assets/images/testimonials/testimonials_1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="assets/images/testimonials/testimonials_1.jpg" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Satria Nugraha</h5>
+                        <span class="text-muted">CEO Nutshell</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="assets/images/testimonials/testimonials_2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe natus expedita ab facilis ut, animi explicabo amet. Voluptatibus possimus iste enim, doloremque, fugiat accusamus nisi optio fugit ratione expedita harum?</div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="assets/images/testimonials/testimonials_2.jpg" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Selena Arrini</h5>
+                        <span class="text-muted">CEO BigTree</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- End testimonial -->
+  
+  <!-- Client -->
+  <!--
+  <div class="vg-page page-client">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_1.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_2.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_3.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_4.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_5.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_6.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_7.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/images/logo/company_8.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- End client -->
+  
+  <!-- Other-Information -->
+  <div id="extra-info">
+    <div class="vg-page page-blog">
+      <div class="container">
+        <div class="text-center">
+          <div class="badge badge-subhead wow fadeInUp">Other Information</div>
+        </div>
+        <h1 class="text-center fw-normal wow fadeInUp">My Academic Life and Accomplishments</h1>
+        <p style="text-align: center;">For more information, please click on the image to access an external reference link!</p>
+        <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+          <button class="btn btn-theme-outline selected" data-filter="*">All</button>
+          <button class="btn btn-theme-outline" data-filter=".scholarships">Scholarships</button>
+          <button class="btn btn-theme-outline" data-filter=".certifications">Certifications</button>
+          <button class="btn btn-theme-outline" data-filter=".extracurricular-activities">Activities / Organizations</button>
+          <button class="btn btn-theme-outline" data-filter=".honors">Honors</button>
+        </div>
+        
+        <!-- Gridder -->
+        <div class="gridder my-3">
+          <div class="grid-item scholarships honors zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/KDF-Organzation-Logo.png" data-fancybox 
+              data-caption="<h5 class='fg-theme'>Long Nguyen and Kimmy Duong Scholarship Recipient</h5> 
+                            <p> Date Received: July 23rd, 2022 <br>
+                              For more information, please click <a href='https://thekimmyduongfoundation.org/' target='_blank'><b>here<b></a>.
+                            </p>">
+              <img src="assets/images/other-misc/KDF-Organzation-Logo.png" alt="Kimmy Duong Foundation Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">Long Nguyen and Kimmy Duong Scholarship Recipient</h5>
+                <p>Scholarships, Honors</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item scholarships honors zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/Lockheed-Martin-Organization-Logo.jpg" data-fancybox
+              data-caption="<h5 class='fg-theme'>Lockheed Martin STEM Scholarship Recipient</h5>
+                            <p> Date Received: May 10th, 2022 <br>
+                              For more information, please click <a href='https://learnmore.scholarsapply.org/lockheedmartin/' target='_blank'><b>here<b></a>.
+                            </p>">
+              <img src="assets/images/other-misc/Lockheed-Martin-Organization-Logo.jpg" alt="Lockheed Martin Organization Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">Lockheed Martin STEM Scholarship Recipient</h5>
+                <p>Scholarships, Honors</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item scholarships honors wow zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/AWS-InCommunities-Scholarship-Organization-Logo.png" data-fancybox 
+              data-caption="<h5 class='fg-theme'>AWS In-Communities Scholarship Recipient</h5> 
+                            <p> Date (First) Received: May 14th, 2021 <br>
+                              For more information, please click <a href='https://learnmore.scholarsapply.org/awsincommunities/' target='_blank'><b>here<b></a>.
+                            </p>">
+              <img src="assets/images/other-misc/AWS-InCommunities-Scholarship-Organization-Logo.png" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">AWS In-Communities Scholarship Recipient</h5>
+                <p>Scholarships, Honors</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item extracurricular-activities wow zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/VT-VSA-Organization-Image.PNG" data-fancybox 
+              data-caption='<h5 class="fg-theme">VT Vietnamese Student Assocation (VSA) (Participant)</h5> 
+                            <p> Date Joined: Fall 2021 <br>
+                              For more information, please click <a href="https://gobblerconnect.vt.edu/organization/vsa" target="_blank"><b>here<b></a>.
+                            </p>'>
+              <img src="assets/images/other-misc/VT-VSA-Organization-Image.PNG" alt="VT Dean's List Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">VT Vietnamese Student Assocation (VSA)</h5>
+                <p>Activities / Organizations</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item certifications wow zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/Qualcomm-5G-Certification.PNG" data-fancybox 
+              data-caption='<h5 class="fg-theme">Drugs Delivery App</h5> 
+                            <p> Date Received: March 11th, 2022 <br>
+                              For more information, please click <a href="assets/images/other-misc/Qualcomm-5G-Certification.PNG" target="_blank"><b>here<b></a>.
+                            </p>'>
+              <img src="assets/images/other-misc/Qualcomm-5G-Certification.PNG" alt="VT Dean's List Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">VT Dean's List Receipient</h5>
+                <p>Certifications</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item honors wow zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/VT-Deans-List.PNG" data-fancybox 
+              data-caption='<h5 class="fg-theme">VT Deans List Receipient</h5> 
+                            <p> Date(s) Received: Fall 2021 and Spring 2022 <br>
+                              For more information, please click <a href="https://vtx.vt.edu/notices/2022/02/registrar-deans-list-fall-2021.html" target="_blank"><b>here<b></a>.
+                            </p>'>
+              <img src="assets/images/other-misc/VT-Deans-List.PNG" alt="VT Dean's List Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">VT Dean's List Receipient</h5>
+                <p>Honors</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item extracurricular-activities wow zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/VT-SASE-Organization-Image.PNG" data-fancybox 
+              data-caption='<h5 class="fg-theme">Society of Asian Scientists and Engineers (SASE) <br> (Member - 2021/2022, Webmaster - 2022/2023)</h5> 
+                            <p> Date Joined: Fall 2021 <br>
+                              For more information, please click <a href="http://www.sase.org.vt.edu/" target="_blank"><b>here<b></a>.
+                            </p>'>
+              <img src="assets/images/other-misc/VT-SASE-Organization-Image.PNG" alt="VT Dean's List Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">Society of Asian Scientists and Engineers (SASE)</h5>
+                <p>Activities / Organizations</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item extracurricular-activities wow zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/VT-Galipatia-LLC-Organization-Image.PNG" data-fancybox 
+              data-caption='<h5 class="fg-theme">VT Galileo-Hypatia (Galipatia) Academic <br>
+                            Living Learning Community (LLC) (Participant)</h5> 
+                            <p> Date Joined: Fall 2021 <br>
+                              For more information, please click <a href="https://www.galipatiacommunity.com/" target="_blank"><b>here<b></a>.
+                            </p>'>
+              <img src="assets/images/other-misc/VT-Galipatia-LLC-Organization-Image.PNG" alt="VT Dean's List Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">VT Galipatia Living-Learning Community</h5>
+                <p>Activities / Organizations</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item extracurricular-activities wow zoomIn">
+            <div class="img-place" data-src="assets/images/other-misc/VT-GDSC-Organization-Image.PNG" data-fancybox 
+              data-caption='<h5 class="fg-theme">VT Google Developer Student Club (GDSC) (Participant)</h5> 
+                            <p> Date Joined: Fall 2021 <br>
+                              For more information, please click <a href="https://developers.google.com/community/gdsc" target="_blank"><b>here<b></a>.
+                            </p>'>
+              <img src="assets/images/other-misc/VT-GDSC-Organization-Image.PNG" alt="VT Dean's List Logo">
+              <div class="img-caption">
+                <h5 class="fg-theme">VT Google Developer Student Club (GDSC)</h5>
+                <p>Activities / Organizations</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- End gridder -->
+      </div>
+    </div>
+  </div>
+  <!-- End other-information -->
+  
+  <!-- Contact -->
+  <!-- <div class="vg-page page-contact" id="contact">
+    <div class="container-fluid">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Contact</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">Get in touch</h1>
+      <div class="row py-5">
+        <div class="col-lg-7 px-0 pr-lg-3 wow zoomIn">
+          <div class="vg-maps">
+            <div id="google-maps" style="width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form class="vg-contact-form">
+            <div class="form-row">
+              <div class="col-12 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Name" placeholder="Your Name">
+              </div>
+              <div class="col-6 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Email" placeholder="Email Address">
+              </div>
+              <div class="col-6 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Subject" placeholder="Subject">
+              </div>
+              <div class="col-12 mt-3 wow fadeInUp">
+                <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+              </div>
+              <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+  <!-- End Contact -->
+  
+  <!-- Footer -->
+  <div id="website-footer">
+    <div class="vg-footer">
+      <h1 class="text-center">Contact</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 py-3">
+            <div class="footer-info">
+              <p>Where to Find Me:</p>
+              <hr class="divider">
+              <p class="fs-large fg-white">
+                Annandale, VA 22003 <br><br>
+                Virginia Polytechnic Institute and State University Blacksburg, VA 24061-0002
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 py-3">
+            <div class="float-lg-right">
+              <p>Follow Me:</p>
+              <hr class="divider">
+              <ul class="list-unstyled">
+                <li><a href="https://github.com/AndrewTran03" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/andrew-tran-a15760205/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/andrew_tran03/" target="_blank">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 py-3">
+            <div class="float-lg-right">
+              <p>Contact Me:</p>
+              <hr class="divider">
+              <ul class="list-unstyled">
+                <li>andrewt03@vt.edu</li>
+                <li>(571) 789-9357</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center mt-3">
+          <!-- Subscribe Functionality (If Needed Later) -->
+          <!--
+          <div class="col-12 mb-3">
+            <h3 class="fw-normal text-center">Subscribe</h3>
+          </div>
+          <div class="col-lg-6">
+            <form class="mb-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email address">
+                <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
+              </div>
+            </form>
+          </div>
+          -->
+          <div class="col-12">
+            <p class="text-center mb-0 mt-4"> Credit for Website: For moral, ethical, legal and legal reasons, I will report the template's author for this website. This 
+              website used the template linked <a href="https://www.free-css.com/free-css-templates/page269/virtual-folio" target="_blank">here</a> on FreeCSS's webpage. 
+              Furthermore, the following information was also found on FreeCSS's webpage: "This template was made with <span class="ti-heart fg-theme-red"></span> 
+              by <a href="https://www.macodeid.com/">MACode ID</a>."</p>
+          </div>
+        </div> 
+      </div>
+    </div> 
+  </div>
+  <!-- End footer -->
+  
+  <!-- All Integrated JavaScript Scripts (Listed Below)-->
+  <div id="script-list">
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+ 
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+      
+    <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+      
+    <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+      
+    <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+      
+    <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+      
+    <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+    <script src="assets/vendor/wow/wow.min.js"></script>
+
+    <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+    <script src="assets/js/google-maps.js"></script>
+      
+    <script src="assets/js/topbar-virtual.js"></script>
+
+    <script src="assets/js/extra-functionality.js" type="text/javascript"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  </div>
+  <!-- End of listing of JavaScript scripts -->
+</body>
 
 </html>
