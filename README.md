@@ -1,6 +1,6 @@
 # AndrewTran03.github.io
 
-Website Link: <a href="https://andrewtran03.github.io/" target="_blank">Here</a>
+Website Link: ![Here](https://andrewtran03.github.io/){:target="_blank"}
 
 ## Version 2.20 (Last Updated - Aug 5th, 2022):
 
