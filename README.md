@@ -6,7 +6,7 @@
   <img src="assets/images/background-about/andrew-tran-profile-picture.PNG" alt="Andrew Tran - Profile Picture"/>
 </div>
 
-This website has been updated using a template made of <a href="https://www.free-css.com/free-css-templates/page269/virtual-folio">FreeCSS</a>. To further enhance the capabilities of this website, I used this opportunity to develop a medium to which I can discuss my biography, academic life, achievements / honors, extracurricular activities and organizations that I attend in hopes of displaying my developed professionalism obtained following my graduation from WT Woodson High School and my current attendance at Virginia Tech Polytechnic Institute and State University (Virginia Tech).
+This website has been updated using a template made of <a href="https://www.free-css.com/free-css-templates/page269/virtual-folio" target="_blank">FreeCSS</a>. To further enhance the capabilities of this website, I used this opportunity to develop a medium to which I can discuss my biography, academic life, achievements / honors, extracurricular activities and organizations that I attend in hopes of displaying my developed professionalism obtained following my graduation from WT Woodson High School and my current attendance at Virginia Tech Polytechnic Institute and State University (Virginia Tech).
 
 ## Version 1.00 (Last Updated - May 21st, 2022):
 
