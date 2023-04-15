@@ -2,7 +2,7 @@
 
 Website Link: <a href="https://andrewtran03.github.io/" target="_blank">https://andrewtran03.github.io/</a>
 
-## Version 2.2333Last Updated - Sept. 6th, 2022):
+## Version 2.27 (Last Updated - April 15th, 2023):
 
 <div align="center">
   <img src="assets/images/background-about/andrew-tran-profile-picture.PNG" alt="Andrew Tran - Profile Picture"/>
